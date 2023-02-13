@@ -1,3 +1,7 @@
+body {
+  background-color: #0D192C;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,38 +9,89 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 596px;
+  width: 350px;
+  border-radius: 15px;
+  background-color: #15263F;
+  box-shadow: 0px 25px 50px 0px #00000018;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card__top {
+  margin: 0 auto;
+}
+.card__top_image {
+  height: 302px;
+  width: 302px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.card__bottom {
+  paddingTop: 3rem;
 }
-
-.card {
-  padding: 2em;
+.card__bottom_title {
+  //styleName: Heading;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
 }
-
-.read-the-docs {
-  color: #888;
+.card__bottom_description {
+  //styleName: Body;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  max-width: 302px;
+}
+.card__bottom_price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__bottom_price_title {
+  //styleName: Caption (Bold);
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #00FFF8;
+}
+.card__bottom_price_time {
+  //styleName: Caption;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8BACD9;
+}
+.card__bottom_user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__bottom_user_img {
+  height: 33px;
+  width: 33px;
+  background-color: 'red';
+}
+.card__bottom_user_name {
+  //styleName: Caption;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
 }
