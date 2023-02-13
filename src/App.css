@@ -7,12 +7,6 @@ body {
   margin: 0 auto;
 }
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
 
 .card__wrapper {
   display: flex;
@@ -27,10 +21,17 @@ body {
 .card__top {
   margin: 0 auto;
 }
+.card__top_wrapper {
+  position: relative;
+}
 .card__top_image {
   margin-top: 1rem;
   height: 302px;
   width: 302px;
+}
+.card__top_image:hover {
+  /* border-radius: 10px; */
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 248, 0) 0%, #00FFF8 100%);
 }
 
 .card__bottom {

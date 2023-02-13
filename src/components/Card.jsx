@@ -9,11 +9,14 @@ const Card = () => {
     <>
       <div className="card__wrapper">
         <div className="card__top">
-          <img
-            src={NFTImage}
-            alt="NFT Card Image"
-            className="card__top_image"
-          />
+          <div className="card__top_wrapper">
+            <img
+              src={NFTImage}
+              alt="NFT Card Image"
+              className="card__top_image"
+            />
+            <div className="overlay"></div>
+          </div>
         </div>
         <div className="card__bottom">
           <p className="card__bottom_title">#3429</p>
