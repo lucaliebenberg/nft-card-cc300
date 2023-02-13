@@ -25,6 +25,8 @@ const Card = () => {
             <p className="card__bottom_price_title">0.041 ETH</p>
             <p className="card__bottom_price_time">3 days left</p>
           </div>
+          <div className="card__bottom_line"></div>
+
           <div className="card__bottom_user">
             <div className="card__bottom_user_img">
               <img
