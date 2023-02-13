@@ -23,31 +23,35 @@ body {
   margin: 0 auto;
 }
 .card__top_image {
+  margin-top: 1rem;
   height: 302px;
   width: 302px;
 }
 
 .card__bottom {
   paddingTop: 3rem;
+  margin: 0 auto;
 }
 .card__bottom_title {
   //styleName: Heading;
-  font-family: Outfit;
+  font-family: sans-serif;
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 0px;
   text-align: left;
+  color: white;
 }
 .card__bottom_description {
   //styleName: Body;
-  font-family: Outfit;
+  font-family: sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
   letter-spacing: 0px;
   text-align: left;
   max-width: 302px;
+  color: #8BACD9;
 }
 .card__bottom_price {
   display: flex;
@@ -57,7 +61,7 @@ body {
 }
 .card__bottom_price_title {
   //styleName: Caption (Bold);
-  font-family: Outfit;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
@@ -67,7 +71,7 @@ body {
 }
 .card__bottom_price_time {
   //styleName: Caption;
-  font-family: Outfit;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -78,20 +82,34 @@ body {
 .card__bottom_user {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .card__bottom_user_img {
   height: 33px;
   width: 33px;
-  background-color: 'red';
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: 2px solid white;
+}
+.card__bottom_user_image {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .card__bottom_user_name {
   //styleName: Caption;
-  font-family: Outfit;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: left;
+  color: #8BACD9;
+}
+
+.card__bottom_user_name_white {
+  color: white;
 }

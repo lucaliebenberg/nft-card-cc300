@@ -2,6 +2,7 @@ import React from "react";
 
 // imports
 import NFTImage from "../assets/nft-image.png";
+import Avatar from "../assets/avatar-image.png";
 
 const Card = () => {
   return (
@@ -25,8 +26,17 @@ const Card = () => {
             <p className="card__bottom_price_time">3 days left</p>
           </div>
           <div className="card__bottom_user">
-            <div className="card__bottom_user_img"></div>
-            <p className="card__bottom_user_name">Creation of Jules Wyvern</p>
+            <div className="card__bottom_user_img">
+              <img
+                src={Avatar}
+                alt="Avatar Image"
+                className="card__bottom_user_image"
+              />
+            </div>
+            <p className="card__bottom_user_name">
+              Creation of{" "}
+              <span className="card__bottom_user_name_white">Jules Wyvern</span>
+            </p>
           </div>
         </div>
       </div>
