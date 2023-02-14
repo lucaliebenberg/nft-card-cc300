@@ -30,12 +30,22 @@ body {
   height: 302px;
   width: 302px;
 }
-
-.overlay:hover {
-  height: 100%;
-  width: 100%;
+.overlay {
   position: absolute;
+  height: 302px;
+  width: 302px;
+  background-color: white;
+  opacity: 0;
+  border-radius:10px;
+  top: 0;
+  left: 0;
+  margin-top: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.overlay:hover {
   background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 248, 0) 0%, #00FFF8 100%);
+  opacity: 50%;
+  cursor: pointer;
 }
 
 .card__bottom {
@@ -60,11 +70,13 @@ body {
 .card__bottom_title:hover{
   color: #00FFF8;
   text-decoration: underline;
+  cursor: pointer;
 }
 .card__bottom_title:hover .extra{
   display: inline-flex;
   color: #00FFF8;
   text-decoration: underline;
+  cursor: pointer;
 }
 .card__bottom_description {
   //styleName: Body;
