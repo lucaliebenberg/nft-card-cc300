@@ -25,18 +25,26 @@ body {
   position: relative;
 }
 .card__top_image {
+  position: relative;
   margin-top: 1rem;
   height: 302px;
   width: 302px;
 }
-.card__top_image:hover {
-  /* border-radius: 10px; */
+
+.overlay:hover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
   background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 248, 0) 0%, #00FFF8 100%);
 }
 
 .card__bottom {
   paddingTop: 3rem;
   margin: 0 auto;
+}
+.extra {
+  display: none;
+  transition: all 0.2s ease;
 }
 .card__bottom_title {
   //styleName: Heading;
@@ -47,6 +55,16 @@ body {
   letter-spacing: 0px;
   text-align: left;
   color: white;
+  transition: all 0.2s ease;
+}
+.card__bottom_title:hover{
+  color: #00FFF8;
+  text-decoration: underline;
+}
+.card__bottom_title:hover .extra{
+  display: inline-flex;
+  color: #00FFF8;
+  text-decoration: underline;
 }
 .card__bottom_description {
   //styleName: Body;
@@ -124,4 +142,10 @@ body {
 
 .card__bottom_user_name_white {
   color: white;
+  transition: all 0.2s ease-in-out;
+}
+.card__bottom_user_name_white:hover {
+  color: #00FFF8;
+  text-decoration: underline;
+  cursor: pointer;
 }

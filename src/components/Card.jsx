@@ -19,7 +19,9 @@ const Card = () => {
           </div>
         </div>
         <div className="card__bottom">
-          <p className="card__bottom_title">#3429</p>
+          <p className="card__bottom_title">
+            <span class="extra">Equilibrium</span> #3429
+          </p>
           <p className="card__bottom_description">
             Our Equilibrium collection promotes balance and calm.
           </p>
