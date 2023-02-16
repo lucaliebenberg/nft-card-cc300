@@ -4,13 +4,12 @@ import React from "react";
 import NFTImage from "../assets/nft-image.png";
 import Avatar from "../assets/avatar-image.png";
 
-const Card = (props) => {
+const Card = () => {
   return (
     <>
       <div className="card__wrapper">
         <div className="card__top">
           <div className="card__top_wrapper">
-            {/* props.image */}
             <img
               src={NFTImage}
               alt="NFT Card Image"
@@ -21,19 +20,14 @@ const Card = (props) => {
         </div>
         <div className="card__bottom">
           <p className="card__bottom_title">
-            {/* props.title */}
-            #3429
+            <span class="extra">Equilibrium</span> #3429
           </p>
           <p className="card__bottom_description">
-            {/* props.description */}
             Our Equilibrium collection promotes balance and calm.
           </p>
 
           <div className="card__bottom_price">
-            <p className="card__bottom_price_title">
-              {/* props.price */}
-              0.041 ETH
-            </p>
+            <p className="card__bottom_price_title">0.041 ETH</p>
             <p className="card__bottom_price_time">3 days left</p>
           </div>
           <div className="card__bottom_line"></div>
